@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditBannerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="375dp"
+            android:layout_height="290dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/PicPhoto18_P"
+            android:src="@drawable/select_product_image"/>
+
+        <ImageView
+            android:layout_width="375dp"
+            android:layout_height="290dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/PicPhoto28_P"
+            android:layout_below="@+id/PicPhoto18_P"
+            android:src="@drawable/select_product_image"/>
+
+        <ImageView
+            android:layout_width="375dp"
+            android:layout_height="290dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/PicPhoto38_P"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/PicPhoto28_P"
+            android:src="@drawable/select_product_image"/>
+
+        <ImageView
+            android:layout_width="375dp"
+            android:layout_height="290dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/PicPhoto48_P"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/PicPhoto38_P"
+            android:src="@drawable/select_product_image"/>
+
+        <ImageView
+            android:layout_width="375dp"
+            android:layout_height="290dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/PicPhoto58_P"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/PicPhoto48_P"
+            android:src="@drawable/select_product_image"/>
+
+    </RelativeLayout>
+
+</ScrollView>

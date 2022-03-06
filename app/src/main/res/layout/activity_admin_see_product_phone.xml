@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminSeeProductPhoneActivity">
+
+    <TextView
+        android:id="@+id/lalaaaqa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BackB"
+        android:padding="10dp"
+        android:text="Edit Primary Phone"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="normal|bold|italic" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view_EPP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lalaaaqa"
+        android:background="@drawable/loginbutton"
+        android:elevation="5dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/EPP_ReLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_view_EPP"
+        android:layout_marginTop="10dp"
+        android:padding="5dp" />
+
+</RelativeLayout>

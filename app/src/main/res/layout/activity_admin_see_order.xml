@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backbackbackback"
+    tools:context=".AdminSeeOrderActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/kgjh"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimary"
+                android:padding="5dp"
+                android:text="Orders"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/gfgfgf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kgjh">
+
+            <RelativeLayout
+                android:id="@+id/N1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/see_order_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/lineline"
+                    android:padding="10sp"
+                    android:paddingBottom="2dp"
+                    android:text="Name"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="normal|bold|italic" />
+
+                <ImageView
+                    android:id="@+id/Name_C"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/copy_past" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/N2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/N1"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/see_order_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/lineline"
+                    android:padding="10sp"
+                    android:paddingBottom="2dp"
+                    android:text="Number"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="normal|bold|italic" />
+
+                <ImageView
+                    android:id="@+id/num_C"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/copy_past" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/N3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/N2"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/see_order_Onum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/lineline"
+                    android:padding="10sp"
+                    android:paddingBottom="2dp"
+                    android:text="O Num"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="normal|bold|italic" />
+
+                <ImageView
+                    android:id="@+id/Onum_C"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/copy_past" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/N4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/N3"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/see_order_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/lineline"
+                    android:padding="10sp"
+                    android:paddingBottom="2dp"
+                    android:text="Address"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="normal|bold|italic" />
+
+                <ImageView
+                    android:id="@+id/address_C"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/copy_past" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/N7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/N4"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/see_order_pid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/lineline"
+                    android:padding="10sp"
+                    android:paddingBottom="2dp"
+                    android:text="PID"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="normal|bold|italic" />
+
+                <ImageView
+                    android:id="@+id/pid_C"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/copy_past" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/N8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/N7"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/see_order_detaildate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/lineline"
+                    android:padding="10sp"
+                    android:paddingBottom="2dp"
+                    android:text="DD"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="normal|bold|italic" />
+
+                <ImageView
+                    android:id="@+id/detaildate_C"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/copy_past" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/N8"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/see_order_return"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/lineline"
+                    android:padding="10sp"
+                    android:paddingBottom="2dp"
+                    android:text="Return"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="normal|bold|italic" />
+
+                <ImageView
+                    android:id="@+id/return_C"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/copy_past" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/plpl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gfgfgf"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/lineline"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/ololololol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Products - "
+                android:textSize="18dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/AdminROSeeOrderUU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ololololol"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/main_back"
+                android:padding="5dp" />
+
+            <ImageView
+                android:id="@+id/ShowDoc"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ololololol"
+                android:layout_marginTop="@dimen/dp_10" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/PDF_Order"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plpl"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/r_square_back"
+            android:gravity="center"
+            android:padding="10sp"
+            android:text="Generate "
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="normal|bold|italic" />
+
+        <Button
+            android:id="@+id/Com_Order"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PDF_Order"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/r_square_back"
+            android:gravity="center"
+            android:padding="10sp"
+            android:text="Complete Order"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="normal|bold|italic" />
+
+        <Button
+            android:id="@+id/Dele_Order"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Com_Order"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/r_square_back"
+            android:gravity="center"
+            android:padding="10sp"
+            android:text="Remove Order"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="normal|bold|italic" />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateNewBillActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10">
+
+        <EditText
+            android:id="@+id/BUserName"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/loginbutton"
+            android:hint="Name"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textStyle="normal|bold|italic" />
+
+        <EditText
+            android:id="@+id/BUserNo"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/BUserName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/loginbutton"
+            android:inputType="number"
+            android:hint="Number"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textStyle="normal|bold|italic" />
+
+        <EditText
+            android:id="@+id/BUserAdd"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/BUserNo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/loginbutton"
+            android:hint="Address"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textStyle="normal|bold|italic" />
+
+        <EditText
+            android:id="@+id/BUserTP"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/BUserAdd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:background="@drawable/loginbutton"
+            android:hint="TotalPrice"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textStyle="normal|bold|italic" />
+
+        <Button
+            android:id="@+id/ButtonCC"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BUserTP"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/joinbutton"
+            android:gravity="center"
+            android:padding="10sp"
+            android:text="Add Detail"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="normal|bold|italic" />
+
+        <RelativeLayout
+            android:id="@+id/hoka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ButtonCC">
+
+            <EditText
+                android:id="@+id/BUserProductN"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/loginbutton"
+                android:hint="Product Name"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textStyle="normal|bold|italic" />
+
+            <EditText
+                android:id="@+id/BUserProductQ"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/BUserProductN"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:background="@drawable/loginbutton"
+                android:hint="Product Quantity"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textStyle="normal|bold|italic" />
+
+            <EditText
+                android:id="@+id/BUserProductP"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/BUserProductQ"
+                android:layout_centerHorizontal="true"
+                android:inputType="number"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/loginbutton"
+                android:hint="Product Price"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textStyle="normal|bold|italic" />
+
+            <Button
+                android:id="@+id/ButtonPP"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/BUserProductP"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/joinbutton"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="Add Detail Pro"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="normal|bold|italic" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/PDFPDFM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hoka"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <RelativeLayout
+                android:id="@+id/odod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bill_back"
+                android:padding="20px">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:id="@+id/IMM"
+                        android:layout_width="210px"
+                        android:layout_height="210px"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:src="@drawable/akm_logo" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/IMM">
+
+                        <TextView
+                            android:id="@+id/tv_hello"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10px"
+                            android:padding="5px"
+                            android:text="AKM : App Ka Medical"
+                            android:textColor="@color/black"
+                            android:textSize="45px" />
+
+                        <TextView
+                            android:id="@+id/tvH"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_hello"
+                            android:layout_centerHorizontal="true"
+                            android:padding="5px"
+                            android:text="P. No. 7987777143, 7987011935"
+                            android:textColor="@color/black"
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvH"
+                            android:layout_centerHorizontal="true"
+                            android:padding="5px"
+                            android:text="as9029701@gmail.com"
+                            android:textColor="@color/black"
+                            android:textSize="30px" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/odod"
+                android:layout_marginTop="-5px"
+                android:background="@drawable/bill_back"
+                android:padding="20px">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true">
+
+                        <TextView
+                            android:id="@+id/CusDateAA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date:" />
+
+                        <TextView
+                            android:id="@+id/CusOrderNoAA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/CusDateAA"
+                            android:text="Order No." />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/bbtt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bill to:"
+                        android:textSize="50px" />
+
+                    <TextView
+                        android:id="@+id/CusNameAAM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bbtt"
+                        android:layout_marginTop="10px"
+                        android:text="Ankit Saxena" />
+
+                    <TextView
+                        android:id="@+id/CusNumberAAM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:layout_below="@+id/CusNameAAM"
+                        android:layout_marginTop="10px"
+                        android:text="No. 7987011935" />
+
+                    <TextView
+                        android:id="@+id/CusAddressAAM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/CusNumberAAM"
+                        android:layout_marginTop="10px"
+                        android:text="H. No. 2623 DwarkaNagar Kachiiyana, Jabalpur, M.P." />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/BD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bT"
+                android:layout_marginTop="-5px"
+                android:background="@drawable/bill_back"
+                android:padding="20px">
+
+                <TextView
+                    android:id="@+id/TCusNoAA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40px"
+                    android:text="No."
+                    android:textSize="40px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="350px"
+                    android:layout_toRightOf="@+id/TCusNoAA"
+                    android:text="Product Name"
+                    android:textSize="40px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60px"
+                    android:layout_toLeftOf="@+id/TCusPMRPAA"
+                    android:text="Qty."
+                    android:textSize="40px" />
+
+                <TextView
+                    android:id="@+id/TCusPMRPAA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="110px"
+                    android:text="MRP"
+                    android:textSize="40px" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/CusRecyclerAAM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/BD" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CusRecyclerAAM"
+                android:id="@+id/jj"
+                android:background="@drawable/bill_back"
+                android:padding="20px">
+
+                <TextView
+                    android:id="@+id/CusAAM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="130px"
+                    android:text="Delivery Fee - ₹15"
+                    android:textSize="40px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jj"
+                android:background="@drawable/bill_back"
+                android:padding="20px">
+
+                <TextView
+                    android:id="@+id/CusTotalPriAAM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="130px"
+                    android:text="Total Price - "
+                    android:textSize="40px" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/ButtonGG"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PDFPDFM"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/joinbutton"
+            android:gravity="center"
+            android:padding="10sp"
+            android:text="Generate Bill"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="normal|bold|italic" />
+    </RelativeLayout>
+
+</ScrollView>

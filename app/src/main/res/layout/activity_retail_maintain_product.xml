@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RetailMaintainProductActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/svv"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="10dp">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:measureAllChildren="false"
+                android:orientation="horizontal"
+                android:scrollbars="none">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/PicPhoto1_MMMM_R"
+                        android:layout_width="305dp"
+                        android:layout_height="290dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/select_product_image" />
+
+                    <ImageView
+                        android:id="@+id/PicPhoto2_MMMM_R"
+                        android:layout_width="305dp"
+                        android:layout_height="290dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/PicPhoto1_MMMM_R"
+                        android:src="@drawable/select_product_image" />
+                </RelativeLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/svv">
+
+            <EditText
+                android:id="@+id/ProductName_MMMM_R"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/loginbutton"
+                android:hint="Product Name"
+                android:padding="10dp"
+                android:textStyle="normal|bold|italic" />
+
+            <EditText
+                android:id="@+id/ProductDescription_MMMM_R"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ProductName_MMMM_R"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/loginbutton"
+                android:hint="Product Description"
+                android:padding="10dp"
+                android:textStyle="normal|bold|italic" />
+
+            <EditText
+                android:id="@+id/ProductCompany_MMMM_R"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ProductDescription_MMMM_R"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/loginbutton"
+                android:hint="Product Company"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textStyle="normal|bold|italic" />
+
+            <EditText
+                android:id="@+id/ProductQuantity_MMMM_R"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ProductCompany_MMMM_R"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/loginbutton"
+                android:hint="Product Quantity"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textStyle="normal|bold|italic" />
+
+            <EditText
+                android:id="@+id/ProductMDate_MMMM_R"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ProductQuantity_MMMM_R"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/loginbutton"
+                android:hint="Product M. Date"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textStyle="normal|bold|italic" />
+
+            <EditText
+                android:id="@+id/ProductEDate_MMMM_R"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ProductMDate_MMMM_R"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/loginbutton"
+                android:hint="Product E. Date"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textStyle="normal|bold|italic" />
+
+            <EditText
+                android:id="@+id/ProductKeyward_MMMM_R"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ProductEDate_MMMM_R"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/loginbutton"
+                android:hint="Product Keyward"
+                android:padding="10dp"
+                android:textStyle="normal|bold|italic" />
+
+            <EditText
+                android:id="@+id/ProductCategory_MMMM_R"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ProductKeyward_MMMM_R"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/loginbutton"
+                android:hint="Category"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textStyle="normal|bold|italic" />
+
+            <Button
+                android:id="@+id/AddProduct_MMMM_R"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone_dissss_R"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/joinbutton"
+                android:text="Add Product"
+                android:textColor="@color/white"
+                android:textStyle="normal|bold|italic"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/DeliProduct_MMMM_R"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AddProduct_MMMM_R"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/joinbutton"
+                android:text="Delete Product"
+                android:textColor="@color/white"
+                android:textStyle="normal|bold|italic" />
+
+            <RelativeLayout
+                android:id="@+id/table_Desscription_A_MMMM_R"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ProductCategory_MMMM_R"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/card_background"
+                android:elevation="5dp"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/A"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:gravity="left"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="Name"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/name_T_A_MMMM_R"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/A"
+                        android:gravity="left"
+                        android:hint="Name"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/a">
+
+                    <TextView
+                        android:id="@+id/B"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:gravity="left"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="Details"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/Detail_T_A_MMMM_R"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/B"
+                        android:gravity="left"
+                        android:hint="Detail"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b">
+
+                    <TextView
+                        android:id="@+id/D"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:gravity="left"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="Brand"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/brand_T_A_MMMM_R"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/D"
+                        android:gravity="left"
+                        android:hint="Brand"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/ProductPrice_MMMM_R"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/table_Desscription_A_MMMM_R"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/loginbutton"
+                android:hint="Price(If Product does&apos;t have No. or Varient)"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textStyle="normal|bold|italic" />
+
+            <RelativeLayout
+                android:id="@+id/phone_dissss_R"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ProductPrice_MMMM_R"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/lkjhgfds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp">
+
+                    <EditText
+                        android:id="@+id/ProductColor1_MMMM_R"
+                        android:layout_width="165dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/loginbutton"
+                        android:hint="Num 1"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <EditText
+                        android:id="@+id/ProductColor2_MMMM_R"
+                        android:layout_width="165dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/ProductColor1_MMMM_R"
+                        android:background="@drawable/loginbutton"
+                        android:hint="Num 2"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <EditText
+                        android:id="@+id/ProductColor3_MMMM_R"
+                        android:layout_width="165dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/ProductColor2_MMMM_R"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:hint="Num 3"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <EditText
+                        android:id="@+id/ProductColor4_MMMM_R"
+                        android:layout_width="165dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/ProductColor3_MMMM_R"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:hint="Num 4"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <EditText
+                        android:id="@+id/ProductColor5_MMMM_R"
+                        android:layout_width="165dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/ProductColor4_MMMM_R"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:hint="Num 5"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <EditText
+                        android:id="@+id/ProductColor6_MMMM_R"
+                        android:layout_width="165dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/ProductColor5_MMMM_R"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:hint="Num 6"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <EditText
+                        android:id="@+id/ProductColor7_MMMM_R"
+                        android:layout_width="165dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/ProductColor6_MMMM_R"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:hint="Num 7"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <EditText
+                        android:id="@+id/ProductColor8_MMMM_R"
+                        android:layout_width="165dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/ProductColor7_MMMM_R"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:hint="Num 8"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <EditText
+                        android:id="@+id/ProductColor9_MMMM_R"
+                        android:layout_width="165dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/ProductColor8_MMMM_R"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:hint="Num 9"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <EditText
+                        android:id="@+id/ProductColor10_MMMM_R"
+                        android:layout_width="165dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/ProductColor9_MMMM_R"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:hint="Num 10"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:textStyle="normal|bold|italic" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/ltlt"
+                    android:layout_width="2dp"
+                    android:layout_height="540dp"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:layout_toRightOf="@+id/lkjhgfds"
+                    android:background="@drawable/joinbutton" />
+
+                <RelativeLayout
+                    android:id="@+id/thth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ltlt">
+
+                    <EditText
+                        android:id="@+id/ProductColor1Pri_MMMM_R"
+                        android:layout_width="165dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/loginbutton"
+                        android:hint="Price 1"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <EditText
+                        android:id="@+id/ProductColor2Pri_MMMM_R"
+                        android:layout_width="165dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/ProductColor1Pri_MMMM_R"
+                        android:background="@drawable/loginbutton"
+                        android:hint="Price 2"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <EditText
+                        android:id="@+id/ProductColor3Pri_MMMM_R"
+                        android:layout_width="165dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/ProductColor2Pri_MMMM_R"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:hint="Price 3"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <EditText
+                        android:id="@+id/ProductColor4Pri_MMMM_R"
+                        android:layout_width="165dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/ProductColor3Pri_MMMM_R"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:hint="Price 4"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <EditText
+                        android:id="@+id/ProductColor5Pri_MMMM_R"
+                        android:layout_width="165dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/ProductColor4Pri_MMMM_R"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:hint="Price 5"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <EditText
+                        android:id="@+id/ProductColor6Pri_MMMM_R"
+                        android:layout_width="165dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/ProductColor5Pri_MMMM_R"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:hint="Price 6"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <EditText
+                        android:id="@+id/ProductColor7Pri_MMMM_R"
+                        android:layout_width="165dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/ProductColor6Pri_MMMM_R"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:hint="Price 7"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <EditText
+                        android:id="@+id/ProductColor8Pri_MMMM_R"
+                        android:layout_width="165dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/ProductColor7Pri_MMMM_R"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:hint="Price 8"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <EditText
+                        android:id="@+id/ProductColor9Pri_MMMM_R"
+                        android:layout_width="165dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/ProductColor8Pri_MMMM_R"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:hint="Price 9"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <EditText
+                        android:id="@+id/ProductColor10Pri_MMMM_R"
+                        android:layout_width="165dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/ProductColor9Pri_MMMM_R"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:hint="Price 10"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:textStyle="normal|bold|italic" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/aga"
+                    android:layout_width="2dp"
+                    android:layout_height="540dp"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:layout_toRightOf="@+id/thth"
+                    android:background="@drawable/joinbutton" />
+
+                <TextView
+                    android:id="@+id/mkoiuy"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/lkjhgfds"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/loginbutton" />
+
+                <RelativeLayout
+                    android:id="@+id/kjhgfdss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mkoiuy"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/ProductSR1_MMMM_R"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/loginbutton"
+                        android:gravity="center"
+                        android:paddingLeft="40dp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="40dp"
+                        android:paddingBottom="10sp"
+                        android:text="Adult"
+                        android:textSize="16dp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <TextView
+                        android:id="@+id/ProductSR2_MMMM_R"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/ProductSR1_MMMM_R"
+                        android:background="@drawable/loginbutton"
+                        android:paddingLeft="40dp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="40dp"
+                        android:paddingBottom="10sp"
+                        android:text="Child"
+                        android:textSize="14dp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <EditText
+                        android:id="@+id/AdultPri_MMMM_R"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ProductSR1_MMMM_R"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/loginbutton"
+                        android:hint="Adult Price"
+                        android:inputType="number"
+                        android:paddingLeft="40dp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="40dp"
+                        android:paddingBottom="10sp"
+                        android:textSize="15dp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <EditText
+                        android:id="@+id/ChildPri_MMMM_R"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ProductSR1_MMMM_R"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/AdultPri_MMMM_R"
+                        android:background="@drawable/loginbutton"
+                        android:hint="Child Price"
+                        android:inputType="number"
+                        android:paddingLeft="40dp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="40dp"
+                        android:paddingBottom="10sp"
+                        android:textSize="15dp"
+                        android:textStyle="normal|bold|italic" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/kjhgfdss"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/loginbutton" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

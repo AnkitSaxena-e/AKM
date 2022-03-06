@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backbackbackback"
+    tools:context=".Fragments.AdminHomeFragment">
+
+    <Button
+        android:id="@+id/AdminAddNewPhone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Add Product"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/AdminManagePhones"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AdminAddNewPhone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Manage Product"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/AdminManageBanner"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AdminManagePhones"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Manage Banner"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/AdminManageFPhones"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AdminManageBanner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Home Show Items"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/AdminRetailB"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AdminManageFPhones"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Retail Section"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/AdminNewB"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AdminRetailB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Create Bill"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/AdminManageLogout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AdminNewB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Logout"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

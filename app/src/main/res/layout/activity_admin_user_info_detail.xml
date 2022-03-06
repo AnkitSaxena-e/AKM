@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backbackbackback"
+    tools:context=".AdminUserInfoDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/addressSeeAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PasswardProfileA"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/below"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/blue"
+            android:padding="10dp"
+            android:text="User"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_profile_image_profileA"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/below"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30sp"
+            android:background="@drawable/circuler_cat"
+            android:padding="2dp"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/profile_nameA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_profile_image_profileA"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/card_background"
+            android:padding="6dp"
+            android:paddingLeft="20dp"
+            android:text="Name"
+            android:textColor="@color/blueDark"
+            android:textSize="20dp"
+            android:textStyle="normal|bold|italic" />
+
+        <TextView
+            android:id="@+id/profile_numberA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_nameA"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/card_background"
+            android:padding="6dp"
+            android:paddingLeft="20dp"
+            android:text="Number"
+            android:textColor="@color/blueDark"
+            android:textSize="20dp"
+            android:textStyle="normal|bold|italic" />
+
+        <TextView
+            android:id="@+id/PasswardProfileA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_numberA"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/card_background"
+            android:padding="6dp"
+            android:paddingLeft="20dp"
+            android:text="Passward"
+            android:textColor="@color/blueDark"
+            android:textSize="20dp"
+            android:textStyle="normal|bold|italic" />
+
+        <Button
+            android:id="@+id/Delete_Account"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addressSeeAdmin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/joinbutton"
+            android:gravity="center"
+            android:padding="10sp"
+            android:text="Delete Account"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="normal|bold|italic" />
+
+        <Button
+            android:id="@+id/Sus_User"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Delete_Account"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/joinbutton"
+            android:gravity="center"
+            android:padding="10sp"
+            android:text="Suspend User"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="normal|bold|italic" />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.akm_admin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/akm_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.Light.NoActionBar"
+        tools:replace="android:theme">
+        <activity
+            android:name="com.example.akm_admin.EditBannerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.akm_admin.RetailBannerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.akm_admin.RetailMaintainProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.akm_admin.RetailSeeMaintProActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.akm_admin.ReFHShowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.akm_admin.RetailSeeOrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.akm_admin.RetSeeUserDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.akm_admin.RetailAddPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.akm_admin.RetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.akm_admin.CreateNewBillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.akm_admin.CreatePDFActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.akm_admin.AdminAddCatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.akm_admin.AdminFHShowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.akm_admin.AdminSeeProductPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.akm_admin.StartingActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.akm_admin.AdminMaintainProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.akm_admin.AdminSeeOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.akm_admin.AdminUserInfoDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.akm_admin.AdminAddPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.akm_admin.AdminFeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.akm_admin.ADActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.akm_admin.AdminMainActivity"
+            android:label="Home"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name="com.example.akm_admin.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <service
+            android:name="com.example.akm_admin.MyFCMService"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

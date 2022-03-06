@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreatePDFActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Butt"
+            android:text="Create"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/PDFPDF"
+            android:layout_below="@+id/Butt"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/odod"
+                android:padding="20px"
+                android:background="@drawable/bill_back">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/sgsg">
+
+                    <ImageView
+                        android:layout_width="210px"
+                        android:layout_height="210px"
+                        android:id="@+id/IMM"
+                        android:src="@drawable/akm_logo"
+                        android:layout_marginLeft="@dimen/dp_10"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/IMM"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/tv_hello"
+                            android:textColor="@color/black"
+                            android:textSize="45px"
+                            android:text="AKM : App Ka Medical"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10px"
+                            android:padding="5px"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/tvH"
+                            android:textColor="@color/black"
+                            android:textSize="30px"
+                            android:layout_below="@id/tv_hello"
+                            android:padding="5px"
+                            android:text="P. No. 7987777143, 7987011935"
+                            android:layout_centerHorizontal="true"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/tvHR"
+                            android:textColor="@color/black"
+                            android:textSize="30px"
+                            android:layout_below="@id/tvH"
+                            android:padding="5px"
+                            android:text="as9029701@gmail.com"
+                            android:layout_centerHorizontal="true"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bT"
+                android:layout_marginTop="-5px"
+                android:padding="20px"
+                android:background="@drawable/bill_back"
+                android:layout_below="@+id/odod">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date:"
+                            android:id="@+id/CusDateAA"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Order No."
+                            android:layout_below="@+id/CusDateAA"
+                            android:id="@+id/CusOrderNoAA"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bill to:"
+                        android:textSize="50px"
+                        android:id="@+id/bbtt"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px"
+                        android:text="Ankit Saxena"
+                        android:id="@+id/CusNameAA"
+                        android:layout_below="@+id/bbtt"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px"
+                        android:text="No. 7987011935"
+                        android:id="@+id/CusNumberAA"
+                        android:layout_below="@+id/CusNameAA"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px"
+                        android:text="H. No. 2623 DwarkaNagar Kachiiyana, Jabalpur, M.P."
+                        android:id="@+id/CusAddressAA"
+                        android:layout_below="@+id/CusNumberAA"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20px"
+                android:id="@+id/BD"
+                android:layout_marginTop="-5px"
+                android:background="@drawable/bill_back"
+                android:layout_below="@+id/bT">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No."
+                    android:id="@+id/TCusNoAA"
+                    android:layout_marginRight="40px"
+                    android:textSize="40px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Name"
+                    android:layout_marginRight="350px"
+                    android:layout_toRightOf="@+id/TCusNoAA"
+                    android:id="@+id/TCusPNaAA"
+                    android:textSize="40px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Qty."
+                    android:layout_toLeftOf="@+id/TCusPMRPAA"
+                    android:id="@+id/TCusPQuAA"
+                    android:layout_marginRight="60px"
+                    android:textSize="40px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MRP"
+                    android:layout_marginRight="110px"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/TCusPMRPAA"
+                    android:textSize="40px"/>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/BD"
+                android:id="@+id/CusRecyclerAA">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20px"
+                android:layout_below="@+id/CusRecyclerAA"
+                android:background="@drawable/bill_back"
+                android:id="@+id/ff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery Fee - ₹15"
+                    android:textSize="40px"
+                    android:id="@+id/CusDeAA"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="130px"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20px"
+                android:background="@drawable/bill_back"
+                android:layout_below="@+id/ff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Price - "
+                    android:textSize="40px"
+                    android:id="@+id/CusTotalPriAA"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="130px"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

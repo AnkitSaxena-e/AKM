@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReFHShowActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Home Show Items"
+            android:id="@+id/lplpa"
+            android:layout_centerHorizontal="true"
+            android:textSize="18dp"
+            android:layout_marginTop="@dimen/dp_20"/>
+
+        <EditText
+            android:id="@+id/FirstF_R"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/lplpa"
+            android:background="@drawable/loginbutton"
+            android:hint="First Phone Type"
+            android:padding="10dp"
+            android:textStyle="normal|bold|italic" />
+
+        <EditText
+            android:id="@+id/SecondS_R"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/FirstF_R"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/loginbutton"
+            android:hint="Second Phone Type"
+            android:padding="10dp"
+            android:textStyle="normal|bold|italic" />
+
+        <EditText
+            android:id="@+id/ThirdT_R"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/SecondS_R"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/loginbutton"
+            android:hint="Third Phone Type"
+            android:padding="10dp"
+            android:textStyle="normal|bold|italic" />
+
+        <EditText
+            android:id="@+id/ForthF_R"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/ThirdT_R"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/loginbutton"
+            android:hint="Forth Phone Type"
+            android:padding="10dp"
+            android:textStyle="normal|bold|italic" />
+
+        <EditText
+            android:id="@+id/FiveF_R"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/ForthF_R"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/loginbutton"
+            android:hint="Five Phone Type"
+            android:padding="10dp"
+            android:textStyle="normal|bold|italic" />
+
+        <EditText
+            android:id="@+id/SixS_R"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/FiveF_R"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/loginbutton"
+            android:hint="Six Phone Type"
+            android:padding="10dp"
+            android:textStyle="normal|bold|italic" />
+
+        <Button
+            android:id="@+id/AddFhoneF_R"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/SixS_R"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/joinbutton"
+            android:text="Add It"
+            android:textColor="@color/white"
+            android:textStyle="normal|bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Massage"
+            android:layout_below="@+id/AddFhoneF_R"
+            android:id="@+id/lplpaaa"
+            android:layout_centerHorizontal="true"
+            android:textSize="18dp"
+            android:layout_marginTop="@dimen/dp_20"/>
+
+        <EditText
+            android:id="@+id/InfiUP_R"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/lplpaaa"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:background="@drawable/loginbutton"
+            android:hint="Info"
+            android:padding="10dp"
+            android:textStyle="normal|bold|italic" />
+
+        <Button
+            android:id="@+id/AddUp_R"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/InfiUP_R"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/joinbutton"
+            android:text="Add Inf0"
+            android:textColor="@color/white"
+            android:textStyle="normal|bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Category"
+            android:layout_below="@+id/AddUp_R"
+            android:id="@+id/lplpaa"
+            android:layout_centerHorizontal="true"
+            android:textSize="18dp"
+            android:layout_marginTop="@dimen/dp_20"/>
+
+        <EditText
+            android:id="@+id/CategoryName_R"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/lplpaa"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/loginbutton"
+            android:hint="Category Name"
+            android:padding="10dp"
+            android:textStyle="normal|bold|italic" />
+
+        <EditText
+            android:id="@+id/CategoryValue_R"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/CategoryName_R"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/loginbutton"
+            android:hint="Category Value"
+            android:padding="10dp"
+            android:textStyle="normal|bold|italic" />
+
+        <Button
+            android:id="@+id/AddCategory_R"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/CategoryValue_R"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/joinbutton"
+            android:text="Add It"
+            android:textColor="@color/white"
+            android:textStyle="normal|bold|italic" />
+
+    </RelativeLayout>
+
+</ScrollView>
