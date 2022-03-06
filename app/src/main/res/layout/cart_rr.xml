@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_10"
+    android:elevation="3dp"
+    android:background="@drawable/card_background"
+    app:cardElevation="15dp">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="356dp"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reCart">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_menu_gallery"
+                android:layout_marginStart="10dp"
+                android:id="@+id/Image_CartSS"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:textStyle="italic"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_below="@+id/Image_CartSS"
+                android:id="@+id/Quantity_CartSS"
+                android:text="Product Quantity"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/reCart"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:id="@+id/Name_CartSS"
+            android:text="Product Name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textStyle="italic"
+            android:layout_toRightOf="@+id/reCart"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/Name_CartSS"
+            android:id="@+id/Price_CartSS"
+            android:text="Product Price"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textStyle="italic"
+            android:layout_toRightOf="@+id/reCart"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/Price_CartSS"
+            android:id="@+id/Color_CartSS"
+            android:text="Company"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textStyle="italic"
+            android:layout_toRightOf="@+id/reCart"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/Color_CartSS"
+            android:id="@+id/SR_CartSS"
+            android:text="Number"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/reCart">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text="Edit"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:background="@drawable/boycover_a"
+                android:id="@+id/Edit_CartSS"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/boycover_a"
+                android:text="Remove"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_toRightOf="@+id/Edit_CartSS"
+                android:id="@+id/Remove_CartSS"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

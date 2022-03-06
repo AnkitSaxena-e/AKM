@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/address_show_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/top_K">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complete Your Shop Kyc"
+            android:textStyle="bold"
+            android:padding="@dimen/dp_10"
+            android:textColor="#545454"
+            android:textSize="15dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/clearDial"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_clear_24"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/top_K"
+        android:background="@drawable/goola"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10"
+        android:layout_below="@+id/top_K">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You must complete it for: "
+            android:textColor="#545454"
+            android:id="@+id/lolololololo"
+            android:textSize="18dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:id="@+id/a"
+            android:layout_below="@+id/lolololololo">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/pho"
+                android:src="@drawable/empty_cart"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Your Goods"
+                android:layout_toRightOf="@+id/pho"
+                android:layout_centerVertical="true"
+                android:textColor="#545454"
+                android:id="@+id/lol"
+                android:textSize="14dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:id="@+id/b"
+            android:layout_below="@+id/a">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/phoa"
+                android:src="@drawable/empty_cart"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fastest Delivery at your door steps"
+                android:layout_toRightOf="@+id/phoa"
+                android:layout_centerVertical="true"
+                android:textColor="#545454"
+                android:id="@+id/lola"
+                android:textSize="14dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:id="@+id/c"
+            android:layout_below="@+id/b">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/phob"
+                android:src="@drawable/empty_cart"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="With Very Affective Price"
+                android:layout_toRightOf="@+id/phob"
+                android:layout_centerVertical="true"
+                android:textColor="#545454"
+                android:id="@+id/lolb"
+                android:textSize="14dp"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/c"
+            android:id="@+id/AI_KYC_D"
+            android:textColor="@color/white"
+            android:background="@drawable/joinbutton"
+            android:layout_margin="30sp"
+            android:text="Start KYC"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note: We Will Approve Your Account Accordin To Your Document As Soon Ass Possible.."
+            android:layout_below="@+id/AI_KYC_D"
+            android:id="@+id/text_Kyc_D"
+            android:gravity="center"
+            android:textSize="14dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

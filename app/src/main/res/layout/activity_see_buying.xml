@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backbackbackback"
+    tools:context=".SeeBuyingActivity">
+
+    <RelativeLayout
+        android:id="@+id/lplpddl"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/r_square_back"
+        android:elevation="0dp"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/Theme.STSCom.PopupOverlay">
+
+        <ImageView
+            android:id="@+id/back_sett_seeeeee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/back_sett_seeeeee"
+            android:text="Edit Your Product"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10"
+        android:layout_below="@id/lplpddl">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/ff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lineline"
+                android:padding="5sp">
+
+                <TextView
+                    android:id="@+id/ololololollo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Products - "
+                    android:textSize="18dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/UserROSeeOrderUU"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ololololollo"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/main_back"
+                    android:padding="5dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/kk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ff"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/see_order_name_BB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/kgjh"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/lineline"
+                    android:padding="8dp"
+                    android:text="Name"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/see_order_order_number_BB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/see_order_name_BB"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/lineline"
+                    android:padding="8dp"
+                    android:text="Address"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/see_order_login_number_BB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/see_order_order_number_BB"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/lineline"
+                    android:padding="8dp"
+                    android:text="City"
+                    android:textSize="18dp"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/see_order_address_BB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/see_order_login_number_BB"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/lineline"
+                    android:padding="8dp"
+                    android:text="Pin"
+                    android:textSize="18dp"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/see_order_PID_BB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/see_order_address_BB"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/lineline"
+                    android:padding="8dp"
+                    android:text="Number"
+                    android:textSize="18dp"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/see_order_amount_BB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/see_order_PID_BB"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/lineline"
+                    android:padding="8dp"
+                    android:text="Total Amount"
+                    android:textSize="18dp"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/see_order_type_BB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/see_order_amount_BB"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/lineline"
+                    android:padding="8dp"
+                    android:text="Date"
+                    android:textSize="18dp"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/see_order_orderNo_BB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/see_order_type_BB"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/lineline"
+                    android:padding="8dp"
+                    android:text="Time"
+                    android:textSize="18dp"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/see_order_status_BB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/see_order_orderNo_BB"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/lineline"
+                    android:padding="8dp"
+                    android:text="DeliveryDetail - Accepted Delivery in 1-2 Hours"
+                    android:textSize="18dp"
+                    android:textStyle="italic|bold" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/Return_BB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kk"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40sp"
+                android:layout_marginRight="30dp"
+                android:text="Return" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

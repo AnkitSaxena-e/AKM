@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20px">
+
+    <TextView
+        android:layout_width="70px"
+        android:layout_height="wrap_content"
+        android:text="No."
+        android:id="@+id/TCusNo"
+        android:layout_marginRight="40px"
+        android:textSize="40px"/>
+
+    <TextView
+        android:layout_width="900px"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:layout_marginRight="350px"
+        android:layout_toRightOf="@+id/TCusNo"
+        android:id="@+id/TCusPNa"
+        android:textSize="40px"/>
+
+    <TextView
+        android:layout_width="70px"
+        android:layout_height="wrap_content"
+        android:text="Qty."
+        android:layout_toLeftOf="@+id/TCusPMRP"
+        android:id="@+id/TCusPQu"
+        android:layout_marginRight="50px"
+        android:textSize="40px"/>
+
+    <TextView
+        android:layout_width="170px"
+        android:layout_height="wrap_content"
+        android:text="MRP"
+        android:layout_marginRight="20px"
+        android:layout_alignParentRight="true"
+        android:id="@+id/TCusPMRP"
+        android:textSize="40px"/>
+
+</RelativeLayout>

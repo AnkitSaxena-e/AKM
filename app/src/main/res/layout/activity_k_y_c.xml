@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KYCActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/lplpuu"
+        android:elevation="0dp"
+        android:background="@drawable/r_square_back"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/Theme.STSCom.PopupOverlay" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_margin="8dp"
+            android:id="@+id/back_sett_rev_order"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KYC"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@+id/back_sett_rev_order" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lplpuu"
+        android:id="@id/pppp"
+        android:text="Please Add Your Licence pictures"
+        android:gravity="center"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/pppppp"
+        android:layout_below="@+id/pppp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_30"
+        android:text="Front - "
+        android:gravity="left"
+        android:textSize="17dp"/>
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/Re_a_kyc"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/recycler_background"
+        android:layout_below="@id/pppppp">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/img_a_kyc"
+            android:src="@drawable/ic_menu_camera"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/pppaappp"
+        android:layout_below="@+id/Re_a_kyc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_30"
+        android:text="Back - "
+        android:gravity="left"
+        android:textSize="17dp"/>
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/Re_b_kyc"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/recycler_background"
+        android:layout_below="@id/pppaappp">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/img_b_kyc"
+            android:src="@drawable/ic_menu_camera"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Re_b_kyc"
+        android:id="@+id/AI_KYC"
+        android:textColor="@color/white"
+        android:background="@drawable/joinbutton"
+        android:layout_marginTop="50sp"
+        android:text="Start KYC"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Note: We Will Approve Your Account Accordin To Your Document As Soon Ass Possible.."
+        android:layout_below="@+id/AI_KYC"
+        android:id="@+id/text_Kyc"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:layout_margin="@dimen/dp_20"/>
+
+</RelativeLayout>
