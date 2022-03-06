@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/m_b_m">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_30">
+
+        <Button
+            android:layout_width="360dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="9sp"
+            android:layout_marginRight="9sp"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/joinbutton"
+            android:textSize="15sp"
+            android:text="Join"
+            android:id="@+id/join"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:layout_width="360dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="9sp"
+            android:layout_marginRight="9sp"
+            android:id="@+id/login"
+            android:padding="10dp"
+            android:background="@drawable/back_back"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/join"
+            android:layout_centerHorizontal="true"
+            android:text="Already have an account Login"
+            android:textColor="#0797A0"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

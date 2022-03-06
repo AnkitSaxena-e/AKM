@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "448541213709",
+    "firebase_url": "https://ssme-5eb32-default-rtdb.firebaseio.com",
+    "project_id": "ssme-5eb32",
+    "storage_bucket": "ssme-5eb32.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:448541213709:android:521f8e0d40ce7f90f98144",
+        "android_client_info": {
+          "package_name": "com.example.ssm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "448541213709-5d24nggnajjujonrfs2mhlbsunr97e76.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ssm",
+            "certificate_hash": "f7668791e17c520f600548368119938d72727687"
+          }
+        },
+        {
+          "client_id": "448541213709-bl27aj9i5gdb906f2n62upihlgqn0sbt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJWaWujv23SXF1fAumvsfOsTbGHQrV9d8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "448541213709-bl27aj9i5gdb906f2n62upihlgqn0sbt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

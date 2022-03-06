@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:background="@drawable/card_background"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_marginTop="6dp"
+            android:layout_centerHorizontal="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/Image_cirF"
+        android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textStyle="bold|italic"
+            android:id="@+id/Name_cirF"
+            android:textColor="@color/blue"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/Image_cirF"
+            />
+
+        <TextView
+            android:id="@+id/Price_cirF"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/Name_cirF"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/blueDark"
+            android:text="price"
+            android:textSize="11dp"
+            android:textStyle="bold|italic" />
+        </RelativeLayout>
+    </RelativeLayout>

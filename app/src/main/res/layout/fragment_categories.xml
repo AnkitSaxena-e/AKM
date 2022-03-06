@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backbackbackback"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Fragments.CategoriesFragment">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Venflon"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:id="@+id/Admin_Venflon_AAAA"
+        android:background="@drawable/loginbutton"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IV Set"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:id="@+id/Admin_Iv_Set_AAAA"
+        android:layout_below="@+id/Admin_Venflon_AAAA"
+        android:background="@drawable/loginbutton"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Foley Catheter"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:layout_below="@+id/Admin_Iv_Set_AAAA"
+        android:id="@+id/Admin_Foley_Catheter_AAAA"
+        android:background="@drawable/loginbutton"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nebulization Mask"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:layout_below="@+id/Admin_Foley_Catheter_AAAA"
+        android:id="@+id/Admin_Nebulization_Mask_AAAA"
+        android:background="@drawable/loginbutton"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Oxygen Mask"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:layout_below="@+id/Admin_Nebulization_Mask_AAAA"
+        android:id="@+id/Admin_Oxygen_Mask_AAAA"
+        android:background="@drawable/loginbutton"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3 Way Connector"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:id="@+id/Admin_Way_Connector_AAAA"
+        android:layout_below="@+id/Admin_Oxygen_Mask_AAAA"
+        android:background="@drawable/loginbutton"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cotton"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:id="@+id/Admin_Cotton_AAAA"
+        android:layout_below="@+id/Admin_Way_Connector_AAAA"
+        android:background="@drawable/loginbutton"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ryles Tube"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:layout_below="@+id/Admin_Cotton_AAAA"
+        android:id="@+id/Admin_Ryles_Tube_AAAA"
+        android:background="@drawable/loginbutton"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ET Tube"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:layout_below="@+id/Admin_Ryles_Tube_AAAA"
+        android:id="@+id/Admin_ET_Tube_AAAA"
+        android:background="@drawable/loginbutton"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Uro Bag"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:id="@+id/Admin_Uro_Bag_AAAA"
+        android:layout_below="@+id/Admin_ET_Tube_AAAA"
+        android:background="@drawable/loginbutton"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Feeding Tube"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:layout_below="@+id/Admin_Uro_Bag_AAAA"
+        android:id="@+id/Admin_Feeding_Tube_AAAA"
+        android:background="@drawable/loginbutton"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suction Tube"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:layout_below="@+id/Admin_Feeding_Tube_AAAA"
+        android:id="@+id/Admin_Suction_Tube_AAAA"
+        android:background="@drawable/loginbutton"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Other"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_below="@+id/Admin_Suction_Tube_AAAA"
+        android:textSize="18dp"
+        android:id="@+id/Admin_Other_AAAA"
+        android:background="@drawable/loginbutton"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

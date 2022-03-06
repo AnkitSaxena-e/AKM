@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1090px"
+    android:layout_height="1920px"
+    android:background="@drawable/bill_back">
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/odod"-->
+<!--        android:padding="20px"-->
+<!--        android:background="@drawable/bill_back">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:id="@+id/sgsg">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="210px"-->
+<!--                android:layout_height="210px"-->
+<!--                android:id="@+id/IMM"-->
+<!--                android:src="@drawable/profile"/>-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_toRightOf="@+id/IMM"-->
+<!--                android:layout_centerVertical="true">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_hello"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="45px"-->
+<!--                    android:text="AKM : App Ka Medical"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_marginTop="10px"-->
+<!--                    android:padding="5px"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_width="wrap_content"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvH"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="30px"-->
+<!--                    android:layout_below="@id/tv_hello"-->
+<!--                    android:padding="5px"-->
+<!--                    android:text="P. No. 7987777143, 7987011935"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_width="wrap_content"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvHR"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="30px"-->
+<!--                    android:layout_below="@id/tvH"-->
+<!--                    android:padding="5px"-->
+<!--                    android:text="as9029701@gmail.com"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_width="wrap_content"/>-->
+
+<!--            </RelativeLayout>-->
+
+<!--        </RelativeLayout>-->
+
+<!--    </RelativeLayout>-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/bT"-->
+<!--        android:layout_marginTop="-5px"-->
+<!--        android:padding="20px"-->
+<!--        android:background="@drawable/bill_back"-->
+<!--        android:layout_below="@+id/odod">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentRight="true">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Date:"-->
+<!--                    android:id="@+id/CusDate"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Order No."-->
+<!--                    android:layout_below="@+id/CusDate"-->
+<!--                    android:id="@+id/CusOrderNo"/>-->
+
+<!--            </RelativeLayout>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Bill to:"-->
+<!--                android:textSize="50px"-->
+<!--                android:id="@+id/bbtt"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10px"-->
+<!--                android:text="Ankit Saxena"-->
+<!--                android:id="@+id/CusName"-->
+<!--                android:layout_below="@+id/bbtt"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10px"-->
+<!--                android:text="No. 7987011935"-->
+<!--                android:id="@+id/CusNumber"-->
+<!--                android:layout_below="@+id/CusName"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10px"-->
+<!--                android:text="H. No. 2623 DwarkaNagar Kachiiyana, Jabalpur, M.P."-->
+<!--                android:id="@+id/CusAddress"-->
+<!--                android:layout_below="@+id/CusNumber"/>-->
+
+<!--        </RelativeLayout>-->
+
+<!--    </RelativeLayout>-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="20px"-->
+<!--        android:id="@+id/BD"-->
+<!--        android:layout_marginTop="-5px"-->
+<!--        android:background="@drawable/bill_back"-->
+<!--        android:layout_below="@+id/bT">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="No."-->
+<!--            android:id="@+id/TCusNo"-->
+<!--            android:layout_marginRight="40px"-->
+<!--            android:textSize="40px"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Product Name"-->
+<!--            android:layout_marginRight="350px"-->
+<!--            android:layout_toRightOf="@+id/TCusNo"-->
+<!--            android:id="@+id/TCusPNa"-->
+<!--            android:textSize="40px"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Qty."-->
+<!--            android:layout_toLeftOf="@+id/TCusPMRP"-->
+<!--            android:id="@+id/TCusPQu"-->
+<!--            android:layout_marginRight="60px"-->
+<!--            android:textSize="40px"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="MRP"-->
+<!--            android:layout_marginRight="110px"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:id="@+id/TCusPMRP"-->
+<!--            android:textSize="40px"/>-->
+
+<!--    </RelativeLayout>-->
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/BD"-->
+<!--        android:id="@+id/CusRecycler">-->
+
+<!--    </androidx.recyclerview.widget.RecyclerView>-->
+<!--    -->
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="20px"-->
+<!--        android:layout_below="@+id/CusRecycler">-->
+<!--        -->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Total Price - "-->
+<!--            android:id="@+id/CusTotalPri"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginRight="110px"/>-->
+<!--        -->
+<!--    </RelativeLayout>-->
+
+</RelativeLayout>
