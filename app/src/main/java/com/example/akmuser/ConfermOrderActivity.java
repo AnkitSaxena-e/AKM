@@ -102,7 +102,7 @@ public class ConfermOrderActivity extends AppCompatActivity {
     private int d = 0;
 
     final private String FCM_API = "https://fcm.googleapis.com/fcm/send";
-    final private String serverKey = "key=" + "AAAAaG8jxA0:APA91bHr9CESgTqyuMCv0x5YQ5pEVgoW9C0pu3tdArtOKVBRKXMTV9YVPRbdXtUItQcfaI-q_5JT3kKzbD2QblnN1Dm17cWQFzLIoQbWzRz0jqxsoBnmh0MBIK1AuraD-5AH9qMq05Ll";
+    final private String serverKey = "key=" + "-----------------------------------------";
 
     final private String contentType = "application/json";
     final String TAG = "NOTIFICATION TAG";
